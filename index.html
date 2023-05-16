@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="contenedor_entrada">
+        <div class="contenedor_logo">
+            <img src="recursos/img/logo.png" class="logo_img">
+        </div>
+
+        <div class="grupo_uno">
+            <textarea type="text" placeholder="Ingrese el texto aqui" id="entrada_texto"></textarea>
+
+            <div class="contenedor_advertencia">
+                <img src="recursos/img/Vector.png" alt="exclamacion">
+                <p class="advertencia">Solo letras minúsculas y sin acentos</p>
+            </div>
+
+            <div class="contenedor_botones">
+                <button id="encriptar" onclick="encriptar()">Encriptar</button>
+
+                <button id="desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="contenedor_salida">
+        <div class="salida_texto">
+            <div id="no_texto">
+                <img src="recursos/img/Muñeco.png" alt="Muñeco" id="imagen_salida">
+                <p class="no_texto_encontrado">Ningún mensaje fue encontrado</p>
+                <p class="no_texto_ingresar">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="mostrar_texto">
+                <div class="mostrar_texto_parrafo">
+                    <p id="mostrar"></p>
+                </div>
+                <div class="mostrar_texto_boton"><button id="copiar" onclick="copiar()">Copiar</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

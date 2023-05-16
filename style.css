@@ -1,0 +1,256 @@
+* {
+    font-family: 'Inter', sans-serif !important;
+}
+
+body {
+    display: flex;
+    background-color: #E5E5E5;
+}
+
+.contenedor_entrada {
+    width: 70%;
+}
+
+.contenedor_logo {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.grupo_uno {
+    margin-left: 20%;
+    width: 70%;
+}
+
+#entrada_texto {
+    resize: none;
+    width: 99.5%;
+    margin-top: 40px;
+    padding-bottom: 280px;
+    background-color: #E5E5E5;
+    color: #0A3871;
+    font-size: 30px;
+    border: 0;
+}
+
+#entrada_texto:focus {
+    outline: none;
+}
+
+#entrada_texto::-webkit-input-placeholder {
+    color: #0A3871 !important
+}
+
+/* Chrome, Opera ySafari */
+#entrada_texto::-moz-placeholder {
+    color: #0A3871 !important
+}
+
+/* Firefox 19+ */
+#entrada_texto:-ms-input-placeholder {
+    color: #0A3871 !important
+}
+
+/* IE 10+ y Edge */
+#entrada_texto:-moz-placeholder {
+    color: #0A3871 !important
+}
+
+/* Firefox 18- */
+
+.contenedor_advertencia {
+    margin-top: 20px;
+    color: #495057;
+    font-size: 12px;
+    display: flex;
+}
+
+.advertencia {
+    margin-left: 5px;
+}
+
+.contenedor_botones {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#encriptar {
+    border-color: #0A3871;
+    background-color: #0A3871;
+    padding: 15px;
+    width: 45%;
+    border-radius: 18px;
+    color: white;
+}
+
+#encriptar:hover {
+    background-color: #2d5d97;
+}
+
+#desencriptar {
+    background-color: #E5E5E5;
+    width: 45%;
+    padding: 15px;
+    border-color: #0A3871;
+    border-radius: 18px;
+
+}
+
+#desencriptar:hover {
+    background-color: #bad1eb;
+}
+
+.contenedor_salida {
+    width: 30%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.salida_texto {
+    width: 90%;
+    height: 95%;
+    background-color: white;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 24px 25px rgba(0, 0, 0, 0.062);
+}
+
+#no_texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#imagen_salida {
+    width: 60%;
+    margin-bottom: 15px;
+}
+
+.no_texto_encontrado {
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.no_texto_ingresar {
+    font-size: 16px;
+}
+
+#mostrar_texto {
+    width: 90%;
+    height: 95.5%;
+    overflow-wrap: break-word;
+    justify-content: space-between;
+    flex-direction: column;
+    display: none;
+}
+
+.mostrar_texto_parrafo {
+    height: 80%;
+    margin-top: 15px;
+}
+
+.mostrar_texto_boton {
+    text-align: center;
+}
+
+#mostrar {
+    font-size: 24px;
+}
+
+#copiar {
+    background-color: white;
+    width: 97%;
+    padding: 15px;
+    border-color: #0A3871;
+    border-radius: 18px;
+}
+
+#copiar:hover {
+    background-color: #0A3871 !important;
+    color: white !important;
+}
+
+
+@media (max-width: 810px) {
+    body {
+        display: block;
+        height: 100vh;
+    }
+
+    .contenedor_entrada {
+        width: 100%;
+        height: 80%;
+    }
+
+    .contenedor_salida {
+        width: 100%;
+        height: 20%;
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grupo_uno {
+        margin: auto;
+    }
+
+    #entrada_texto {
+        padding-bottom: 95%;
+    }
+
+    #imagen_salida {
+        display: none;
+    }
+
+    .mostrar_texto_parrafo {
+        margin-top: 20px;
+        overflow-y: scroll;
+    }
+
+    .mostrar_texto_boton {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+}
+
+@media (max-height: 890px) and (max-width: 375px) {
+    .contenedor_entrada {
+        width: 100%;
+        height: 70%;
+    }
+
+    .contenedor_salida {
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor_botones {
+        flex-direction: column;
+    }
+
+    #encriptar {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    #desencriptar {
+        width: 100%;
+    }
+
+    #entrada_texto {
+        padding-bottom: 100%;
+    }
+}
