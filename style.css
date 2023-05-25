@@ -180,9 +180,9 @@ body {
     color: white !important;
 }
 
-@media (max-height: 1081px) {
+@media (min-height: 1079px) {
     .grupo_uno {
-        height: 89.7%;
+        height: 89.5%;
     }
 }
 
